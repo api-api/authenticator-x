@@ -9,6 +9,7 @@
 namespace APIAPI\Authenticator_X;
 
 use APIAPI\Core\Authenticators\Authenticator;
+use APIAPI\Core\Exception;
 
 if ( ! class_exists( 'APIAPI\Authenticator_X\Authenticator_X' ) ) {
 
