@@ -2,7 +2,7 @@
 /**
  * Authenticator loader.
  *
- * @package APIAPIAuthenticatorX
+ * @package APIAPI\Authenticator_X
  * @since 1.0.0
  */
 
