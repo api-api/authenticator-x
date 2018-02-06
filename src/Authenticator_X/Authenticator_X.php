@@ -32,7 +32,7 @@ if ( ! class_exists( 'APIAPI\Authenticator_X\Authenticator_X' ) ) {
 		 *
 		 * @throws Request_Authentication_Exception Thrown when the request cannot be authenticated.
 		 */
-		public function authenticate_request( $request ) {
+		public function authenticate_request( Route_Request $request ) {
 			$data = $this->parse_authentication_data( $request );
 
 			if ( empty( $data['header_name'] ) ) {
@@ -59,7 +59,7 @@ if ( ! class_exists( 'APIAPI\Authenticator_X\Authenticator_X' ) ) {
 		 * @param Route_Request $request The request to check.
 		 * @return bool True if the request is authenticated, otherwise false.
 		 */
-		public function is_authenticated( $request ) {
+		public function is_authenticated( Route_Request $request ) {
 			$data = $this->parse_authentication_data( $request );
 
 			if ( empty( $data['header_name'] ) ) {
